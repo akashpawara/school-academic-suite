@@ -28,7 +28,7 @@ include("config.php");
     {
       echo '<script type="text/javascript">'.
       'window.alert("Sorry you made some mistake with your username or password :( ");'.
-      'window.location.href="../loginform.html";'.
+      'window.location.href="../index.html";'.
       '</script>';
      }
   }

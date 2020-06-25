@@ -6,15 +6,15 @@
    $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
    $login_session = $row['userName'];
    if(!isset($_SESSION['login_user'])){
-      header("location:../loginform.html");
+      header("location:../index.html");
    }
    $_SESSION['access']=$row['access'];
    if($row['access'] != "Teacher")
    {
-       header("../loginform.html");
+       header("../index.html");
    }
    elseif($row['access'] != "Admin")
    {
-       header("../loginform.html");
+       header("../index.html");
    }
 ?>
